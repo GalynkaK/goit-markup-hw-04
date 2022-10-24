@@ -115,7 +115,10 @@ h1,h2,h3,p{
 }
 .icon-header{
   margin-right: 10px;
-  fill:currentColor;
+  fill: currentColor;
+    overflow: hidden;
+    vertical-align: -0.15em;
+    font-size: inherit;
 }
 .contakts:hover ,
 .contakts:focus {
@@ -188,6 +191,7 @@ h1,h2,h3,p{
 
 .features-list{
   width: 270px;
+  
 }
 
 /* .features-list::before{
@@ -306,30 +310,40 @@ h1,h2,h3,p{
 }
 .icon{
   align-items: center;
-  border-radius: 50%;
-  display: flex;
-  margin-right: 10px;
 }
-.icon:nth-child(4n) {
+.social-icon:nth-child(4n) {
   margin-right: 0;
 }
 
 .social-link{
   display: inline-block;
-  fill: var(--icon-color);
+  fill: currentColor;
+  border-radius: 50%;
+  width: 44px;
+    height: 44px;
 }
 
 .social-icon{
-  fill: currentColor;
+  display: flex;
+  fill: var(--icon-color);
+  margin-right: 10px;
+  padding: 12px;
 }
-.social-link:focus,
-.social-link:hover{
-  fill: var(--accent-color);
+
+.social-icon:nth-child(4n) {
+  margin-right: 0;
 }
+
 .social-icon:hover,
 .social-icon:focus {
-  fill: var(--nav-color);
+  fill: var(--accent-color);
 }
+.social-link:focus,
+.social-link:hover {
+  background-color: var(--nav-color);
+}
+
+
 .clients{
   display: flex;
   gap: 30px;
@@ -466,6 +480,10 @@ h1,h2,h3,p{
   margin-bottom: 0;
 }
 
+.flex-emelent:hover{
+  border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 img {
   display: block;
 }
@@ -540,6 +558,10 @@ img {
 address{
   font-style: normal;
 }
+.footer{
+  display: flex;
+}
+
 .footer-address{
   color: var(--accent-color);
 }
@@ -550,4 +572,57 @@ address{
 
 .footer-contakt:nth-child(-n+2){
   margin-bottom: 9px;
+}
+.action{
+  display: block;
+  margin-right:20px;
+
+}
+.logo-adress{
+  width: 270px;
+}
+.title-footer{
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.social-link-footer {
+  display: flex;
+}
+
+.icon-footer {
+  align-items: center;
+}
+
+.footer-social-link {
+  display: inline-block;
+  fill: currentColor;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:nth-last-child(3) {
+  margin-right: 0;
+}
+
+.social-icon-footer {
+  display: flex;
+  fill: var(--accent-color);
+  
+  padding: 12px;
+}
+
+.footer-social-link {
+  display: inline-block;
+  fill: currentColor;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.footer-social-link:focus,
+.footer-social-link:hover {
+  background-color: var(--nav-color);
 }
