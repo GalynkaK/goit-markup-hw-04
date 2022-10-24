@@ -98,7 +98,7 @@ h1,h2,h3,p{
 .link.current-portfolio {
   color: var(--nav-color);
 }
-.item{
+.contakts-item{
   display: flex;
     align-items: center;
 }
@@ -122,8 +122,8 @@ h1,h2,h3,p{
   color: var(--nav-color);
 }
 
-.item:hover,
-.item:focus {
+.contakts-item:hover,
+.contakts-item:focus {
   color: var(--nav-color);
   cursor: pointer;
 }
