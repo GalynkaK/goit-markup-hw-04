@@ -385,6 +385,7 @@ h1,h2,h3,p{
   margin-right: 30px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  color: var(--icon-color);
 }
 .link-icon-clients:nth-child(6n){
   margin-right: 0;
@@ -421,7 +422,7 @@ h1,h2,h3,p{
   font-size: 16px;
   line-height: 1.88;
   padding: 10px 32px;
-  
+  border: 0;
   text-align: center;
 
 }
@@ -451,6 +452,7 @@ h1,h2,h3,p{
   color: var(--accent-color);
   background-color: var(--nav-color);
   drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filters {
@@ -490,8 +492,7 @@ h1,h2,h3,p{
 
 .flex-emelent:hover,
 .flex-emelent:focus{
-  border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 img {
   display: block;
@@ -598,17 +599,24 @@ address{
 .contakts-footer:focus{
   color: var(--nav-color);
 }
-.action{
-  display: block;
-  margin-right:20px;
 
-}
 .logo-adress{
   width: 270px;
+  margin-right: 70px;
 }
+
+.action {
+  display: block;
+  align-items: center;
+}
+
 .title-footer{
+  margin-top: 12px;
   margin-bottom: 20px;
   color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .social-link-footer {
@@ -617,6 +625,10 @@ address{
 
 .icon-footer {
   align-items: center;
+  margin-right: 10px;
+}
+.icon-footer:nth-last-child(4){
+  margin-left: 0;
 }
 
 .footer-social-link {
@@ -625,12 +637,7 @@ address{
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
   background: rgba(255, 255, 255, 0.1);
-}
-
-.footer-social-link:nth-last-child(3) {
-  margin-right: 0;
 }
 
 .social-icon-footer {
